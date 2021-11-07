@@ -21,28 +21,49 @@
 <h2>Uebung 1</h2>
 <br><h3>Aufgabe 1 - 1.1</h3>
 
-<br><p>Musikaufnahme</p>
-<audio controls><source src="./audio/musik_mono.wav" type="audio/wav"></audio>
-<p>Bescheibung</p>
-<p>Loesung</p>
+<br><p>Musikaufnahme: Abtastfrequenz 44100, stereo, 16 bit depth </p>
+<audio controls><source src="./audio/Musik_846547.wav" type="audio/wav"></audio>
+
+<br><p>Sprachaufnahme: Abtastfrequenz 8000, mono, 16 bit depth </p>
+<audio controls><source src="./audio/Sprache_846547.wav" type="audio/wav"></audio>
+
 
 <br><h3>Aufgabe 1 - 1.2</h3>
-<p>Loesung</p>
+<p>Loesung:</p>
+<p>Durch die erhöhte Anzahl an Frames in der Musik muss die Abtastfrequenz erhöht werden damit die tatsaechlichen Schwingungen abgetastet werden und keine ansonsten ausgelassen wird. Da in der Sprachdatei nur eine Person spricht und somit die Anzahl der Frames relativ gering bleibt ist eine kleine Abtastfrequenz von 8000 ausreichend. </p>
 
-<br><h3>Aufgabe 2 - 2.1</h3>
-<br><p>Rauschen</p>
-<audio controls><source src="./audio/rauschen.wav" type="audio/wav"></audio>
-<p>Bescheibung</p>
-<p>Loesung</p>
+<br><h3>Aufgabe 1 - 1.3</h3>
+<p>Loesung:</p>
+<p>
+<b>Headerausgabe der Musikdatei:</b> <br>
+Channels: 2 <br>
+Frames: 222692 <br>
+Sample Rate: 44100 <br>
+Valid Bits: 16 <br>
+Bytes per sample: 2 <br>
+</p>
 
-<br><h3>Aufgabe 2 - 2.2</h3>
-<p>Loesung</p>
+<p>
+<b>Headerausgabe der Sprachdatei:</b> <br>
+Channels: 1 <br>
+Frames: 40010 <br>
+Sample Rate: 8000 <br>
+Valid Bits: 16 <br>
+Bytes per sample: 2 <br>
+</p>
 
-<br><h3>Aufgabe 2 - 2.3</h3>
-<p>Loesung</p>
+<br><h3>Aufgabe 1 - 1.4</h3>
+<p>
+Allgemeine Funktion: <br>
+Frequency x bit depth x channels = bit rate <br><br>
+<b>Bitrate der Musikdatei:</b> <br>
+44100 samples per second x 16 bits per sample x 2 channels = 1411200 bits per second <br>
+1411200 bits per second x 5 seconds = 7056000 bit = 882 KB
+</p>
 
-<br><h3>Aufgabe 3 - 3.1</h3>
-<p>Loesung</p>
-
+<b>Bitrate der Sprachdatei:</b> <br>
+8000 samples per second x 16 bits per sample x 1 channel = 128000 bits per second <br>
+128000 bits per second x 5 seconds = 640000 bit = 80 KB
+</p>
 </body>
 </html>
