@@ -71,5 +71,39 @@ Frequency x bit depth x channels = bit rate <br><br>
 8000 samples per second x 16 bits per sample x 1 channel = 128000 bits per second <br>
 128000 bits per second x 5 seconds = 640000 bit = 80 KB
 </p>
+
+<br><h3>Aufgabe 1 - 2.1</h3>
+<p>
+Code um die Daten in eine Datei zu schreiben: <br>
+for (int i=0; i < samples;i++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str=String.valueOf(readWavFile.sound[i]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;writer.write(str);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;writer.newLine();<br>
+}<br>
+writer.close();<br>
+<br><br>
+sine_hi02.wav:<br>
+Es sind ungefaehr 3 Samples pro Sinusschwingung zu erkennen<br>
+16000 Samples / 3 Samples per Sinus = 5333.333 Hz <br>
+Hypothese: sine_hi02.wav hat eine Frequenz von ~5333.33 Hz<br>
+<br>
+sine_lo04.wav:<br>
+Es sind ungefaehr 4 Samples pro Sinusschwingung zu erkennen<br>
+16000 Samples / 4 Samples per Sinus = 4000 Hz <br>
+Hypothese: sine_lo04.wav hat eine Frequenz von ~4000 Hz<br>
+</p>
+
+<br><h3>Aufgabe 1 - 2.2</h3>
+<p>
+Ueberpruefung der Schaetzung mit dem Spektralanalyse-Tool GRAM:
+fuer die sine_hi02.wav Datei liegt die tatsaechliche Frequenz bei 5486 Hz +-16 Hz<br> 
+und fuer die sine_lo04.wav Datei bei 3516 Hz +- 16 Hz. <br>
+Die Diskrepanz der Schaetzung und dem Ergebnis laesst sich auf die Abtastrate zurueckfuehren die fuer ein genaues Ergebnis zu gering war.
+</p>
+
+<br><h3>Aufgabe 1 - 2.3</h3>
+<p>
+
+</p>
 </body>
 </html>
